@@ -1,3 +1,4 @@
+document.getElementById("video-background").play();
 
 
 let day = document.getElementById("day");
