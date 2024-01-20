@@ -63,7 +63,7 @@ body {
         font-size: 31.8px;
         font-weight: 500;
     }
-    .clock{
+   .hero .clock{
         min-width: 250px;
         /* height: 100%; */
         background: #9F365D;
@@ -80,7 +80,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 18px;
+        padding-bottom: 9px;
+        /* padding-top: 5px; */
     }
 }
 
