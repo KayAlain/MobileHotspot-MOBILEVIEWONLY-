@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
    
 }
 
+@font-face {
+    font-family: 'SanFrancisco';
+    src:url('path/to/SanFrancisco-Regular.woff2') format('woff2');
+    /* Add additional font formats and styles as needed */
+   }
 body {
-    font-family: sans-serif;} 
+    font-family: 'SanFrancisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
 
 .Video-container {
     position: relative;
@@ -54,7 +61,7 @@ body {
         transform: translate(-50%, -50%);
         z-index: 100;
         font-size: 31.8px;
-        font-weight: 550;
+        font-weight: 500;
     }
     .clock{
         min-width: 250px;

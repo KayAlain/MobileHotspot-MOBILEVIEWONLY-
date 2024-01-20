@@ -1,6 +1,5 @@
 document.getElementById("video-background").play();
 
-
 let day = document.getElementById("day");
 let hrs = document.getElementById("hrs");
 let min = document.getElementById("min");
@@ -15,20 +14,21 @@ setInterval(() => {
     let dateString = currentTime.toLocaleDateString('en-US', options).replace(/,/g, '');
     day.innerHTML = dateString;
 
-    // Display time
+    // Display time in 12-hour format with AM/PM
     let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
     let ampm = hours >= 12 ? 'PM' : 'AM';
 
     hours = hours % 12;
     hours = hours ? hours : 12; // Convert 0 to 12
 
-    hrs.innerHTML = currentTime.getHours();
-    min.innerHTML = currentTime.getMinutes();
-    sec.innerHTML = currentTime.getSeconds();
+    hrs.innerHTML = hours;
+    min.innerHTML = (minutes < 10 ? "0" : "") + minutes;
+    sec.innerHTML = (seconds < 10 ? "0" : "") + seconds;
     period.innerHTML = ampm;
 
 }, 1000);
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
