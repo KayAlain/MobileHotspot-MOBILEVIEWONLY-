@@ -1,20 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: sans-serif; */
+    font-family: 'Fira Sans', sans-serif;
    
 }
-
-@font-face {
-    font-family: 'SanFrancisco';
-    src:url('path/to/SanFrancisco-Regular.woff2') format('woff2');
-    /* Add additional font formats and styles as needed */
-   }
-body {
-    font-family: 'SanFrancisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    
 
 .Video-container {
     position: relative;
